@@ -10,31 +10,26 @@
     :root {
       --bg1: #eef0ff;
       --bg2: #f7fbff;
-      --card: #ffffff;
+      --card: #fff;
       --text: #1f2430;
       --muted: #60677a;
       --border: #e6e9f2;
-
       --primary: #6b74ff;
-      /* pastel mor-mavi */
       --primary-2: #7fd3ff;
-      /* soft mavi */
       --accent: #ffb3c1;
-      /* pastel pembe */
-      --shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
-      --shadow2: 0 14px 40px rgba(107, 116, 255, 0.18);
-
+      --shadow: 0 10px 30px rgba(16, 24, 40, .08);
+      --shadow2: 0 14px 40px rgba(107, 116, 255, .18);
       --radius: 16px;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
-      padding: 0;
+      padding: 0
     }
 
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: smooth
     }
 
     body {
@@ -46,22 +41,21 @@
 
     a {
       color: inherit;
-      text-decoration: none;
+      text-decoration: none
     }
 
     .container {
       max-width: 1080px;
       margin: 0 auto;
-      padding: 0 16px 56px;
+      padding: 0 16px 56px
     }
 
-    /* HEADER */
     header {
       position: sticky;
       top: 0;
       z-index: 50;
       backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, .75);
       border-bottom: 1px solid var(--border);
     }
 
@@ -78,44 +72,16 @@
     .brand {
       display: flex;
       flex-direction: column;
-      line-height: 1.1;
+      line-height: 1.1
     }
 
     .brand b {
-      font-size: 14px;
+      font-size: 14px
     }
 
     .brand span {
       font-size: 12px;
-      color: var(--muted);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav-links a {
-      font-size: 13px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      color: var(--muted);
-      transition: .2s;
-    }
-
-    .nav-links a:hover {
-      background: rgba(107, 116, 255, 0.10);
-      color: var(--text);
-      border-color: rgba(107, 116, 255, 0.25);
-    }
-
-    .nav-links a.active {
-      background: rgba(107, 116, 255, 0.14);
-      color: var(--text);
-      border-color: rgba(107, 116, 255, 0.35);
+      color: var(--muted)
     }
 
     /* HERO */
@@ -123,10 +89,10 @@
       margin-top: 18px;
       border-radius: calc(var(--radius) + 8px);
       background:
-        radial-gradient(1200px 500px at 20% -10%, rgba(127, 211, 255, 0.35), transparent 60%),
-        radial-gradient(900px 500px at 85% 0%, rgba(255, 179, 193, 0.32), transparent 55%),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.45));
-      border: 1px solid rgba(255, 255, 255, 0.6);
+        radial-gradient(1200px 500px at 20% -10%, rgba(127, 211, 255, .35), transparent 60%),
+        radial-gradient(900px 500px at 85% 0%, rgba(255, 179, 193, .32), transparent 55%),
+        linear-gradient(135deg, rgba(255, 255, 255, .70), rgba(255, 255, 255, .45));
+      border: 1px solid rgba(255, 255, 255, .6);
       box-shadow: var(--shadow);
       padding: 26px;
       position: relative;
@@ -137,12 +103,12 @@
       display: flex;
       gap: 22px;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap
     }
 
     .hero-text {
       flex: 1 1 420px;
-      min-width: 280px;
+      min-width: 280px
     }
 
     .badge {
@@ -152,8 +118,8 @@
       font-size: 12px;
       padding: 6px 10px;
       border-radius: 999px;
-      background: rgba(107, 116, 255, 0.12);
-      border: 1px solid rgba(107, 116, 255, 0.22);
+      background: rgba(107, 116, 255, .12);
+      border: 1px solid rgba(107, 116, 255, .22);
       color: #353b56;
       margin-bottom: 10px;
     }
@@ -161,12 +127,12 @@
     .hero-title {
       font-size: 36px;
       font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 10px;
+      letter-spacing: -.02em;
+      margin-bottom: 10px
     }
 
     .hero-title span {
-      color: var(--primary);
+      color: var(--primary)
     }
 
     .hero-sub {
@@ -174,15 +140,14 @@
       font-size: 14.5px;
       max-width: 640px;
       line-height: 1.55;
-      margin-bottom: 16px;
+      margin-bottom: 16px
     }
 
-    /* hero quick buttons */
     .quick-nav {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: 6px;
+      margin-top: 6px
     }
 
     .pill-btn {
@@ -192,97 +157,82 @@
       padding: 10px 16px;
       border-radius: 999px;
       font-size: 13px;
-      border: 1px solid rgba(107, 116, 255, 0.18);
-      background: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 6px 16px rgba(16, 24, 40, 0.06);
+      border: 1px solid rgba(107, 116, 255, .18);
+      background: rgba(255, 255, 255, .7);
+      box-shadow: 0 6px 16px rgba(16, 24, 40, .06);
       transition: .22s;
       cursor: pointer;
-      text-decoration: none;
-      color: inherit;
       user-select: none;
     }
 
     .pill-btn:hover {
       transform: translateY(-2px);
-      border-color: rgba(107, 116, 255, 0.45);
-      box-shadow: var(--shadow2);
+      border-color: rgba(107, 116, 255, .45);
+      box-shadow: var(--shadow2)
     }
 
-
     .pill-btn.linkedin {
-      background: rgba(127, 211, 255, 0.22);
-      border-color: rgba(127, 211, 255, 0.38);
+      background: rgba(127, 211, 255, .22);
+      border-color: rgba(127, 211, 255, .38)
     }
 
     .pill-btn.download {
-      background: rgba(255, 179, 193, 0.18);
-      border-color: rgba(255, 179, 193, 0.32);
+      background: rgba(255, 179, 193, .18);
+      border-color: rgba(255, 179, 193, .32)
     }
-
-
 
     .hero-card {
       flex: 0 0 280px;
       min-width: 250px;
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid rgba(230, 233, 242, 0.9);
+      background: rgba(255, 255, 255, .75);
+      border: 1px solid rgba(230, 233, 242, .9);
       border-radius: var(--radius);
-      box-shadow: 0 10px 26px rgba(16, 24, 40, 0.07);
+      box-shadow: 0 10px 26px rgba(16, 24, 40, .07);
       padding: 14px;
       transition: .25s;
     }
 
     .hero-card:hover {
       transform: translateY(-3px);
-      border-color: rgba(107, 116, 255, 0.35);
-      box-shadow: var(--shadow2);
-    }
-
-    .avatar {
-      width: 78px;
-      height: 78px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, rgba(255, 179, 193, 0.9), rgba(107, 116, 255, 0.8));
-      border: 3px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
-      margin-bottom: 10px;
+      border-color: rgba(107, 116, 255, .35);
+      box-shadow: var(--shadow2)
     }
 
     .hero-name {
       font-weight: 700;
-      margin-bottom: 2px;
+      margin-bottom: 2px
     }
 
     .hero-role {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin-bottom: 10px
     }
 
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 6px
     }
 
     .chip {
       font-size: 12px;
       padding: 6px 10px;
       border-radius: 999px;
-      background: rgba(255, 179, 193, 0.22);
-      border: 1px solid rgba(255, 179, 193, 0.35);
+      background: rgba(255, 179, 193, .22);
+      border: 1px solid rgba(255, 179, 193, .35);
       color: #6a2f41;
     }
 
     .chip.blue {
-      background: rgba(127, 211, 255, 0.20);
-      border-color: rgba(127, 211, 255, 0.35);
+      background: rgba(127, 211, 255, .20);
+      border-color: rgba(127, 211, 255, .35);
       color: #164a66;
     }
 
-    /* SECTIONS + CARDS */
+    /* SECTIONS */
     section {
-      margin-top: 22px;
+      margin-top: 22px
     }
 
     .section-head {
@@ -290,86 +240,84 @@
       align-items: flex-end;
       justify-content: space-between;
       gap: 10px;
-      margin: 18px 0 10px;
+      margin: 18px 0 10px
     }
 
     .section-title {
       font-size: 20px;
       font-weight: 800;
-      letter-spacing: -0.01em;
+      letter-spacing: -.01em
     }
-
-
 
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 14px
     }
 
-    @media (max-width: 900px) {
+    @media (max-width:900px) {
       .grid-2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
       }
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(230, 233, 242, 0.95);
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(230, 233, 242, .95);
       border-radius: var(--radius);
-      box-shadow: 0 8px 22px rgba(16, 24, 40, 0.06);
+      box-shadow: 0 8px 22px rgba(16, 24, 40, .06);
       padding: 14px;
       transition: .22s;
     }
 
     .card:hover {
       transform: translateY(-3px);
-      border-color: rgba(107, 116, 255, 0.35);
-      box-shadow: var(--shadow2);
+      border-color: rgba(107, 116, 255, .35);
+      box-shadow: var(--shadow2)
     }
 
     .card-title {
       font-weight: 750;
-      margin-bottom: 4px;
+      margin-bottom: 4px
     }
 
     .card-sub {
       font-size: 12.5px;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin-bottom: 10px
     }
 
     .card p {
       font-size: 13.5px;
       color: #2a3243;
-      line-height: 1.55;
+      line-height: 1.55
     }
 
     ul {
       padding-left: 18px;
-      margin-top: 8px;
+      margin-top: 8px
     }
 
     li {
       margin-bottom: 6px;
       color: #2a3243;
       font-size: 13.5px;
-      line-height: 1.45;
+      line-height: 1.45
     }
 
     .tags {
       margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 6px
     }
 
     .tag {
       font-size: 12px;
       padding: 6px 10px;
       border-radius: 999px;
-      background: rgba(107, 116, 255, 0.12);
-      border: 1px solid rgba(107, 116, 255, 0.22);
+      background: rgba(107, 116, 255, .12);
+      border: 1px solid rgba(107, 116, 255, .22);
       color: #31385a;
     }
 
@@ -377,73 +325,73 @@
     .skills {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
+      gap: 12px
     }
 
-    @media (max-width: 980px) {
+    @media (max-width:980px) {
       .skills {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr)
       }
     }
 
-    @media (max-width: 520px) {
+    @media (max-width:520px) {
       .skills {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
       }
     }
 
     .skill {
       padding: 14px;
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(230, 233, 242, 0.95);
-      box-shadow: 0 8px 22px rgba(16, 24, 40, 0.06);
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(230, 233, 242, .95);
+      box-shadow: 0 8px 22px rgba(16, 24, 40, .06);
       transition: .22s;
     }
 
     .skill:hover {
       transform: translateY(-3px);
-      border-color: rgba(127, 211, 255, 0.55);
-      box-shadow: 0 16px 40px rgba(127, 211, 255, 0.20);
+      border-color: rgba(127, 211, 255, .55);
+      box-shadow: 0 16px 40px rgba(127, 211, 255, .20)
     }
 
     .skill small {
       display: block;
       color: var(--muted);
-      letter-spacing: 0.08em;
+      letter-spacing: .08em;
       text-transform: uppercase;
       font-size: 11px;
-      margin-bottom: 6px;
+      margin-bottom: 6px
     }
 
     .skill b {
       display: block;
       font-size: 14px;
-      margin-bottom: 6px;
+      margin-bottom: 6px
     }
 
     .skill .mini {
       color: #2a3243;
       font-size: 13.2px;
-      line-height: 1.45;
+      line-height: 1.45
     }
 
     /* Contact */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 14px
     }
 
-    @media (max-width: 900px) {
+    @media (max-width:900px) {
       .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
       }
     }
 
     label {
       font-size: 12px;
-      color: var(--muted);
+      color: var(--muted)
     }
 
     input,
@@ -452,23 +400,23 @@
       margin-top: 6px;
       padding: 10px 12px;
       border-radius: 12px;
-      border: 1px solid rgba(211, 214, 226, 0.9);
+      border: 1px solid rgba(211, 214, 226, .9);
       outline: none;
       font-family: inherit;
       font-size: 13.5px;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, .85);
       transition: .2s;
     }
 
     input:focus,
     textarea:focus {
-      border-color: rgba(107, 116, 255, 0.55);
-      box-shadow: 0 0 0 4px rgba(107, 116, 255, 0.12);
+      border-color: rgba(107, 116, 255, .55);
+      box-shadow: 0 0 0 4px rgba(107, 116, 255, .12)
     }
 
     textarea {
       min-height: 120px;
-      resize: vertical;
+      resize: vertical
     }
 
     .btn {
@@ -479,18 +427,18 @@
       border-radius: 999px;
       border: none;
       background: var(--primary);
-      color: white;
+      color: #fff;
       font-size: 13px;
       cursor: pointer;
-      box-shadow: 0 10px 22px rgba(107, 116, 255, 0.25);
+      box-shadow: 0 10px 22px rgba(107, 116, 255, .25);
       transition: .2s;
       margin-top: 10px;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 34px rgba(107, 116, 255, 0.35);
-      background: #5962f2;
+      box-shadow: 0 16px 34px rgba(107, 116, 255, .35);
+      background: #5962f2
     }
 
     footer {
@@ -499,7 +447,7 @@
       color: var(--muted);
       font-size: 12px;
       padding-top: 14px;
-      border-top: 1px solid rgba(230, 233, 242, 0.95);
+      border-top: 1px solid rgba(230, 233, 242, .95)
     }
 
     /* Back to top */
@@ -509,9 +457,9 @@
       bottom: 16px;
       padding: 10px 12px;
       border-radius: 999px;
-      border: 1px solid rgba(230, 233, 242, 0.95);
-      background: rgba(255, 255, 255, 0.85);
-      box-shadow: 0 12px 30px rgba(16, 24, 40, 0.10);
+      border: 1px solid rgba(230, 233, 242, .95);
+      background: rgba(255, 255, 255, .85);
+      box-shadow: 0 12px 30px rgba(16, 24, 40, .10);
       cursor: pointer;
       opacity: 0;
       transform: translateY(10px);
@@ -523,107 +471,28 @@
     .to-top.show {
       opacity: 1;
       transform: translateY(0);
-      pointer-events: auto;
+      pointer-events: auto
     }
 
-    /* simple reveal */
+    /* reveal */
     .reveal {
       opacity: 0;
       transform: translateY(10px);
-      transition: .5s;
+      transition: .5s
     }
 
     .reveal.show {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0)
     }
 
     @media (max-width:700px) {
       .hero-title {
-        font-size: 28px;
+        font-size: 28px
       }
 
-      .nav-links {
-        display: none;
-      }
-
-      /* mobilde sade */
       .hero-wrap {
-        padding: 18px;
-      }
-    }
-
-    /* Mobile menu button */
-    .menu-btn {
-      display: none;
-      border: 1px solid rgba(230, 233, 242, 0.95);
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 13px;
-      cursor: pointer;
-      color: var(--text);
-      box-shadow: 0 10px 22px rgba(16, 24, 40, 0.06);
-      transition: .2s;
-    }
-
-    .menu-btn:hover {
-      transform: translateY(-1px);
-      border-color: rgba(107, 116, 255, 0.35);
-      box-shadow: var(--shadow2);
-    }
-
-    /* Mobile dropdown */
-    .mobile-menu {
-      display: none;
-      position: absolute;
-      right: 16px;
-      top: 58px;
-      width: min(320px, calc(100vw - 32px));
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(230, 233, 242, 0.95);
-      border-radius: var(--radius);
-      box-shadow: 0 14px 40px rgba(16, 24, 40, 0.12);
-      padding: 10px;
-      z-index: 60;
-    }
-
-    .mobile-menu a {
-      display: block;
-      padding: 10px 12px;
-      border-radius: 12px;
-      font-size: 13px;
-      color: var(--muted);
-      border: 1px solid transparent;
-      transition: .2s;
-    }
-
-    .mobile-menu a:hover {
-      background: rgba(107, 116, 255, 0.10);
-      color: var(--text);
-      border-color: rgba(107, 116, 255, 0.25);
-    }
-
-    /* Show button only on mobile */
-    @media (max-width:700px) {
-      .menu-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .nav {
-        position: relative;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      /* senin mevcut kuralın */
-      .mobile-menu.show {
-        display: block;
+        padding: 18px
       }
     }
   </style>
@@ -636,30 +505,14 @@
         <b>Rümeysa Kara</b>
         <span>Software Engineering • Mobile & Web</span>
       </div>
-      <nav class="nav-links" id="navLinks">
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-          ☰ Menu
-        </button>
-
-        <nav class="mobile-menu" id="mobileMenu">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-      </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- HERO -->
     <div class="hero-wrap reveal">
       <div class="hero">
         <div class="hero-text">
-          <div class="badge"> Open to Internship • Computer Science</div>
+          <div class="badge">Open to Internship • Computer Science</div>
           <h1 class="hero-title">Hi, I'm <span>Rümeysa</span>.</h1>
           <p class="hero-sub">
             I'm a 3rd-year Software Engineering student with practical experience in Flutter/Dart and .NET.
@@ -674,26 +527,14 @@
             <button class="pill-btn" onclick="go('#contact')">Contact</button>
 
             <a class="pill-btn linkedin" href="https://www.linkedin.com/in/engrumeysakara" target="_blank"
-              rel="noopener">
-              LinkedIn
-            </a>
-
-
-            <!-- CV DOWNLOAD: put cv.pdf next to index.html -->
-            <a class="pill-btn download" href="./Rumeysa_Kara_CV.pdf" download="Rumeysa_Kara_CV.pdf">
-              Download CV
-            </a>
-
-
-            <!-- LinkedIn -->
-
+              rel="noopener">LinkedIn</a>
+            <a class="pill-btn download" href="./Rumeysa_Kara_CV.pdf" download="Rumeysa_Kara_CV.pdf">Download CV</a>
           </div>
         </div>
 
         <aside class="hero-card">
           <div class="hero-name">Rümeysa Kara</div>
           <div class="hero-role">21 Years Old</div>
-
           <div class="hero-role">Software Engineering Student</div>
           <div class="chips">
             <span class="chip">Flutter / Dart</span>
@@ -704,12 +545,9 @@
       </div>
     </div>
 
-    <!-- ABOUT -->
     <section id="about" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">About</div>
-        </div>
+        <div class="section-title">About</div>
       </div>
       <div class="card">
         <p>
@@ -720,12 +558,9 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">Projects</div>
-        </div>
+        <div class="section-title">Projects</div>
       </div>
 
       <div class="grid-2">
@@ -733,66 +568,54 @@
           <div class="card-title">Cinema Management Automation</div>
           <div class="card-sub">.NET • C# • CRUD • Auth</div>
           <p>Role-based system (Admin/User) with movie management and ticket purchase flows.</p>
-          <div class="tags">
-            <span class="tag">C#</span><span class="tag">.NET</span><span class="tag">CRUD</span><span
-              class="tag">Authentication</span>
-          </div>
+          <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">CRUD</span><span
+              class="tag">Authentication</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">Internship Tracking App</div>
           <div class="card-sub">Flutter • Dart • Task Flow</div>
           <p>Mentors assign tasks to interns and track progress/status updates inside the app.</p>
-          <div class="tags">
-            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Task Management</span>
-          </div>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Task
+              Management</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">“Kaptan Köşkü” (IETT) – Module Contribution</div>
           <div class="card-sub">Flutter • Internal App</div>
           <p>Contributed to modules for a driver-focused internal mobile application.</p>
-          <div class="tags">
-            <span class="tag">Flutter</span><span class="tag">Mobile UI</span><span class="tag">Team Work</span>
-          </div>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Mobile UI</span><span class="tag">Team
+              Work</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">Vehicle Routing Problem (VRP / VRPTW)</div>
           <div class="card-sub">Optimization • Algorithms</div>
           <p>Solved routing problems with constraints using heuristic/metaheuristic approaches.</p>
-          <div class="tags">
-            <span class="tag">VRP</span><span class="tag">Optimization</span><span class="tag">Algorithms</span>
-          </div>
+          <div class="tags"><span class="tag">VRP</span><span class="tag">Optimization</span><span
+              class="tag">Algorithms</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">AI Project – Employee Attrition Prediction</div>
           <div class="card-sub">Python • Machine Learning</div>
           <p>Built ML models to predict employee attrition and analyzed key contributing factors.</p>
-          <div class="tags">
-            <span class="tag">Python</span><span class="tag">Model
-              Evaluation</span>
-          </div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Model Evaluation</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">Portfolio Website</div>
           <div class="card-sub">HTML • CSS • Responsive</div>
           <p>Designed and implemented this portfolio with cards, hover effects, and smooth UX.</p>
-          <div class="tags">
-            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">Experience</div>
-        </div>
+        <div class="section-title">Experience</div>
       </div>
 
       <div class="grid-2">
@@ -804,9 +627,8 @@
             <li>Improved UI responsiveness and fixed bugs.</li>
             <li>Worked in a team workflow and delivered features.</li>
           </ul>
-          <div class="tags">
-            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile UI</span>
-          </div>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile
+              UI</span></div>
         </div>
 
         <div class="card">
@@ -817,19 +639,15 @@
             <li>Worked on database-driven features and testing.</li>
             <li>Collaborated on implementation and improvements.</li>
           </ul>
-          <div class="tags">
-            <span class="tag">ASP.NET</span><span class="tag">C#</span><span class="tag">SQL</span>
+          <div class="tags"><span class="tag">ASP.NET</span><span class="tag">C#</span><span class="tag">SQL</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">Education</div>
-        </div>
+        <div class="section-title">Education</div>
       </div>
 
       <div class="grid-2">
@@ -837,91 +655,63 @@
           <div class="card-title">Erasmus Exchange – CESI Graduate School of Engineering</div>
           <div class="card-sub">Rouen, France • Sep 2025 – Present</div>
           <p>Computer science and engineering courses as part of my 3rd year.</p>
-          <div class="tags">
-            <span class="tag">Exchange</span><span class="tag">Engineering</span>
-          </div>
+          <div class="tags"><span class="tag">Exchange</span><span class="tag">Engineering</span></div>
         </div>
 
         <div class="card">
           <div class="card-title">BSc in Software Engineering</div>
           <div class="card-sub">FSM Vakıf University • Istanbul • Oct 2023 – Present</div>
           <p>Coursework in programming, databases, software design, and project development.</p>
-          <div class="tags">
-            <span class="tag">Software Engineering</span><span class="tag">Projects</span>
-          </div>
+          <div class="tags"><span class="tag">Software Engineering</span><span class="tag">Projects</span></div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">Skills</div>
-        </div>
+        <div class="section-title">Skills</div>
       </div>
 
       <div class="skills">
         <div class="skill">
-          <small>Programming</small>
-          <b>Languages</b>
-          <div class="mini">Java, C, Python, C#, SQL • OOP </div>
+          <small>Programming</small><b>Languages</b>
+          <div class="mini">Java, C, Python, C#, SQL • OOP</div>
         </div>
         <div class="skill">
-          <small>Mobile</small>
-          <b>Flutter / Dart</b>
+          <small>Mobile</small><b>Flutter / Dart</b>
           <div class="mini">Responsive UI • App architecture (MVVM)</div>
         </div>
         <div class="skill">
-          <small>Backend</small>
-          <b>.NET</b>
+          <small>Backend</small><b>.NET</b>
           <div class="mini">ASP.NET MVC • CRUD • Authentication • SQL</div>
         </div>
         <div class="skill">
-          <small>Data</small>
-          <b>Machine Learning</b>
+          <small>Data</small><b>Machine Learning</b>
           <div class="mini">Model evaluation • Feature analysis</div>
         </div>
       </div>
     </section>
 
-
-    <!-- CONTACT -->
     <section id="contact" class="reveal">
       <div class="section-head">
-        <div>
-          <div class="section-title">Contact</div>
-        </div>
+        <div class="section-title">Contact</div>
       </div>
 
       <div class="contact-grid">
         <div class="card">
           <div class="card-title">Let’s get in touch</div>
-          <p style="margin-top:6px;">
-            If you want to discuss internships, projects, feel free to contact me.
-          </p>
+          <p style="margin-top:6px;">If you want to discuss internships, projects, feel free to contact me.</p>
 
-          <p style="margin-top:10px; color:var(--muted); font-size:13.5px; line-height:1.6;">
+          <p style="margin-top:10px;color:var(--muted);font-size:13.5px;line-height:1.6;">
             <b>Email:</b> <a href="mailto:rumeysa.kara@stu.fsm.edu.tr">rumeysa.kara@stu.fsm.edu.tr</a><br />
-            <b>Phone:</b>
-            <a href="tel:+905522772253">+90 552 277 22 53</a> /
-            <a href="tel:+33758650184">+33 7 58 65 01 84</a><br />
-
+            <b>Phone:</b> <a href="tel:+905522772253">+90 552 277 22 53</a> / <a href="tel:+33758650184">+33 7 58 65 01
+              84</a><br />
           </p>
 
           <div class="quick-nav" style="margin-top:12px;">
-
             <a class="pill-btn linkedin" href="https://www.linkedin.com/in/engrumeysakara" target="_blank"
-              rel="noopener">
-              LinkedIn
-            </a>
-
-            <a class="pill-btn download" href="./Rumeysa_Kara_CV.pdf" download="Rumeysa_Kara_CV.pdf">
-              Download CV
-            </a>
-
-
-
+              rel="noopener">LinkedIn</a>
+            <a class="pill-btn download" href="./Rumeysa_Kara_CV.pdf" download="Rumeysa_Kara_CV.pdf">Download CV</a>
           </div>
         </div>
 
@@ -931,28 +721,21 @@
               <label for="name">Name</label>
               <input id="name" name="Name" type="text" placeholder="Your name" />
             </div>
-
             <div style="margin-bottom:10px;">
               <label for="email">Email</label>
               <input id="email" name="Email" type="email" placeholder="you@example.com" />
             </div>
-
             <div style="margin-bottom:10px;">
               <label for="message">Message</label>
               <textarea id="message" name="Message" placeholder="Write your message here..."></textarea>
             </div>
-
             <button class="btn" type="submit">Send</button>
-            <p style="margin-top:10px; font-size:12px; color:var(--muted);">
-            </p>
           </form>
         </div>
       </div>
     </section>
 
-    <footer>
-      © <span id="year"></span> Rümeysa Kara • Portfolio
-    </footer>
+    <footer>© <span id="year"></span> Rümeysa Kara • Portfolio</footer>
   </main>
 
   <button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to top</button>
@@ -973,58 +756,12 @@
     }, { threshold: 0.12 });
     els.forEach(el => io.observe(el));
 
-    // back to top + scrollspy
+    // back to top
     const toTop = document.getElementById('toTop');
-    const links = Array.from(document.querySelectorAll('#navLinks a'));
-
-    const sections = links
-      .map(a => document.querySelector(a.getAttribute('href')))
-      .filter(Boolean);
-
     window.addEventListener('scroll', () => {
       if (window.scrollY > 500) toTop.classList.add('show');
       else toTop.classList.remove('show');
-
-      let current = null;
-      for (const s of sections) {
-        const r = s.getBoundingClientRect();
-        if (r.top <= 120 && r.bottom >= 120) { current = s.id; break; }
-      }
-      links.forEach(a => {
-        const id = a.getAttribute('href').replace('#', '');
-        a.classList.toggle('active', id === current);
-      });
     });
-
-    // mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn?.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('show');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    // close menu when clicking a link
-    mobileMenu?.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileMenu.classList.remove('show');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!mobileMenu.classList.contains('show')) return;
-      const target = e.target;
-      if (target instanceof HTMLElement) {
-        if (!mobileMenu.contains(target) && target !== menuBtn) {
-          mobileMenu.classList.remove('show');
-          menuBtn.setAttribute('aria-expanded', 'false');
-        }
-      }
-    });
-
   </script>
 </body>
 
